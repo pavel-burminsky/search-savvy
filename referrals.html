@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Referrals | Search Savvy</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body class="reviews-template">
+	<div class="wrap">
+		<div class="sidebar">
+			<a href="#">
+				<img src="assets/svg/logo.svg" alt="Search Savvy" class="sidebar-logo">
+			</a>
+			<div class="sidebar-nav-item">
+				<a href="#">
+					<img src="assets/svg/icon-dashboard.svg" alt="Dashboard"> Dashboard
+				</a>
+			</div>
+			<div class="sidebar-nav-item">
+				<a href="#">
+					<img src="assets/svg/icon-reviews.svg" alt="Reviews"> Reviews
+				</a>
+			</div>
+			<div class="sidebar-nav-item active">
+				<a href="#">
+					<img src="assets/svg/icon-referrals.svg" alt="Referrals"> Referrals
+				</a>
+			</div>
+			<div class="sidebar-nav-item">
+				<a href="#">
+					<img src="assets/svg/icon-list-upload.svg" alt="List Upload"> List Upload
+				</a>
+			</div>
+			<div class="sidebar-nav-item">
+				<a href="#">
+					<img src="assets/svg/icon-email-log.svg" alt="Email Log"> Email Log
+				</a>
+			</div>
+			<div class="sidebar-nav-item">
+				<a href="#">
+					<img src="assets/svg/icon-settings.svg" alt="Settings"> Settings
+				</a>
+			</div>
+			<div class="sidebar-nav-item">
+				<a href="#">
+					<img src="assets/svg/icon-help.svg" alt="Help"> Help
+				</a>
+			</div>
+		</div>
+		<div class="contents">
+			<div class="top-bar">
+				<div class="top-meta">
+					<img src="assets/svg/photo-sample.svg" alt="profile picture"> Kristen <span></span>
+				</div>
+				<div class="top-nav">
+					<img src="assets/svg/icon-reviews-blue.svg" alt="Dashboard"> 360 Recruiters Referrals
+				</div>
+			</div>
+			<div class="inner-wrap">
+				<div class="inner-filters">
+					<div class="inner-filter">
+						<div class="filter-dropdown">
+							<div class="filter-dropdown-inner">
+								All time <span></span>
+							</div>
+							<div class="dropdown-body">
+								<ul>
+									<li data-filter="all">All time</li>
+									<li data-filter="all">Last 7 days</li>
+									<li data-filter="all">Last 30 days</li>
+									<li data-filter="all">Last 60 days</li>
+									<li data-filter="all">Last 90 days</li>
+									<li data-filter="all">Last 180 days</li>
+									<li data-filter="all">Last 365 days</li>
+									<li data-filter="all">This year</li>
+									<li data-filter="all">Last year</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="inner-filter">
+						<div class="filter-dropdown">
+							<div class="filter-dropdown-inner">
+								All locations <span></span>
+							</div>
+							<div class="dropdown-body checkboxes">
+								<ul>
+									<li data-filter="all"><span></span> All locations</li>
+									<li data-filter="all" class="selected"><span></span> Chicago, IL</li>
+									<li data-filter="all"><span></span> Dallas, TX</li>
+									<li data-filter="all"><span></span> Houston, TX</li>
+									<li data-filter="all"><span></span> New York City, NY</li>
+									<li data-filter="all"><span></span> San Antonio, TX</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="inner-filter">
+						<div class="filter-dropdown">
+							<div class="filter-dropdown-inner">
+								All review types <span></span>
+							</div>
+							<div class="dropdown-body checkboxes">
+								<ul>
+									<li data-filter="all"><span></span> All review types</li>
+									<li data-filter="all" class="selected"><span></span> Client</li>
+									<li data-filter="all"><span></span> Candidate</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="inner-filter">
+						<div class="filter-dropdown">
+							<div class="filter-dropdown-inner">
+								All recruiters <span></span>
+							</div>
+							<div class="dropdown-body checkboxes">
+								<ul>
+									<li data-filter="all"><span></span> All recruiters</li>
+									<li data-filter="all"><span></span> Adyan Hall</li>
+									<li data-filter="all"><span></span> Alisa Buckner</li>
+									<li data-filter="all"><span></span> Dina Stephenson</li>
+									<li data-filter="all"><span></span> Emil Dalby</li>
+									<li data-filter="all"><span></span> Geraint Perry</li>
+									<li data-filter="all"><span></span> Hari Thatcher</li>
+									<li data-filter="all"><span></span> Maya Adkins</li>
+									<li data-filter="all"><span></span> Shaan Lozano</li>
+									<li data-filter="all"><span></span> Sofija Kavanagh</li>
+									<li data-filter="all"><span></span> Sumaiya Pena</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="inner-filter">
+						<div class="inner-checkbox">
+							<span></span> Hide inactive recruiters
+						</div>
+					</div>
+				</div>
+				<div class="space-35"></div>
+				<div class="inner-table-wrap">
+					<div class="table-search">
+						<input type="text" placeholder="Search by recruiter, referrer or person referred"><span class="table-search-btn"></span>
+						<div class="table-export">Export to CSV</div>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th class="asc left">
+									<div>Recruiter <span></span></div>
+								</th>
+								<th class="left">
+									<div>Type <span></span></div>
+								</th>
+								<th class="left">
+									<div>Location <span></span></div>
+								</th>
+								<th class="left">
+									<div>Referrer <span></span></div>
+								</th>
+								<th class="left">
+									<div>Person referred <span></span></div>
+								</th>
+								<th class="left">
+									<div>Email Address <span></span></div>
+								</th>
+								<th class="left">
+									<div>Phone Number <span></span></div>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="left"><img src="assets/svg/photo-sample.svg" alt="person" class="avatar"> Dina Stephenson</td>
+								<td class="left">Client</td>
+								<td class="left">Houston</td>
+								<td class="left">Evelin Corbin</td>
+								<td class="left">Kiara Artrip</td>
+								<td class="left">kiara@gmail.com</td>
+								<td class="left">705-555-013</td>
+							</tr>
+							<tr>
+								<td class="left"><img src="assets/svg/photo-sample.svg" alt="person" class="avatar"> Emil Dalby</td>
+								<td class="left">Candidate</td>
+								<td class="left">Houston</td>
+								<td class="left">Evelin Corbin</td>
+								<td class="left">Kiara Artrip</td>
+								<td class="left">kiara@gmail.com</td>
+								<td class="left">705-555-013</td>
+							</tr>
+							<tr>
+								<td class="left"><img src="assets/svg/photo-sample.svg" alt="person" class="avatar"> Emil Dalby</td>
+								<td class="left">Candidate</td>
+								<td class="left">Houston</td>
+								<td class="left">Evelin Corbin</td>
+								<td class="left">Kiara Artrip</td>
+								<td class="left">kiara@gmail.com</td>
+								<td class="left">705-555-013</td>
+							</tr>
+							<tr>
+								<td class="left"><img src="assets/svg/photo-sample.svg" alt="person" class="avatar"> Emil Dalby</td>
+								<td class="left">Candidate</td>
+								<td class="left">Houston</td>
+								<td class="left">Evelin Corbin</td>
+								<td class="left">Kiara Artrip</td>
+								<td class="left">kiara@gmail.com</td>
+								<td class="left">705-555-013</td>
+							</tr>
+							<tr>
+								<td class="left"><img src="assets/svg/photo-sample.svg" alt="person" class="avatar"> Emil Dalby</td>
+								<td class="left">Candidate</td>
+								<td class="left">Houston</td>
+								<td class="left">Evelin Corbin</td>
+								<td class="left">Kiara Artrip</td>
+								<td class="left">kiara@gmail.com</td>
+								<td class="left">705-555-013</td>
+							</tr>
+							<tr>
+								<td class="left"><img src="assets/svg/photo-sample.svg" alt="person" class="avatar"> Emil Dalby</td>
+								<td class="left">Candidate</td>
+								<td class="left">Houston</td>
+								<td class="left">Evelin Corbin</td>
+								<td class="left">Kiara Artrip</td>
+								<td class="left">kiara@gmail.com</td>
+								<td class="left">705-555-013</td>
+							</tr>
+							<tr>
+								<td class="left"><img src="assets/svg/photo-sample.svg" alt="person" class="avatar"> Emil Dalby</td>
+								<td class="left">Candidate</td>
+								<td class="left">Houston</td>
+								<td class="left">Evelin Corbin</td>
+								<td class="left">Kiara Artrip</td>
+								<td class="left">kiara@gmail.com</td>
+								<td class="left">705-555-013</td>
+							</tr>
+							<tr>
+								<td class="left"><img src="assets/svg/photo-sample.svg" alt="person" class="avatar"> Emil Dalby</td>
+								<td class="left">Candidate</td>
+								<td class="left">Houston</td>
+								<td class="left">Evelin Corbin</td>
+								<td class="left">Kiara Artrip</td>
+								<td class="left">kiara@gmail.com</td>
+								<td class="left">705-555-013</td>
+							</tr>
+							<tr>
+								<td class="left"><img src="assets/svg/photo-sample.svg" alt="person" class="avatar"> Emil Dalby</td>
+								<td class="left">Candidate</td>
+								<td class="left">Houston</td>
+								<td class="left">Evelin Corbin</td>
+								<td class="left">Kiara Artrip</td>
+								<td class="left">kiara@gmail.com</td>
+								<td class="left">705-555-013</td>
+							</tr>
+							<tr>
+								<td class="left"><img src="assets/svg/photo-sample.svg" alt="person" class="avatar"> Emil Dalby</td>
+								<td class="left">Candidate</td>
+								<td class="left">Houston</td>
+								<td class="left">Evelin Corbin</td>
+								<td class="left">Kiara Artrip</td>
+								<td class="left">kiara@gmail.com</td>
+								<td class="left">705-555-013</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="pagination">
+					<div>
+						Page 1 of 8
+					</div>
+					<div>
+						<a href="#" class="prev">Prev</a>
+						<a href="#" class="active">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						...
+						<a href="#">8</a>
+						<a href="#" class="next">Next</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="assets/js/scripts.js"></script>
+</body>
+</html>
