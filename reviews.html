@@ -7,7 +7,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-<body>
+<body class="reviews-template">
 	<div class="wrap">
 		<div class="sidebar">
 			<a href="#">
@@ -134,143 +134,158 @@
 						</div>
 					</div>
 					<div class="inner-filter">
-						<div class="inner-checkbox">
-							<span></span> Hide inactive recruiters
-						</div>
-					</div>
-				</div>
-				<div class="section-title">The Stats</div>
-				<div class="dashboard-stats">
-					<div class="score">
-						<div class="box">
-							<div class="col">
-								<div class="rating" data-rating="4.71"></div>
-								Your Score
+						<div class="filter-dropdown">
+							<div class="filter-dropdown-inner">
+								All scores (0 to 10) <span></span>
 							</div>
-							<div class="col">
+							<div class="dropdown-body checkboxes">
+								<ul>
+									<li data-filter="all"><span></span> All Scores (0 to 10)</li>
+									<li data-filter="all"><span></span> Promoters (9 and 10)</li>
+									<li data-filter="all"><span></span> Passive (7 and 8)</li>
+									<li data-filter="all"><span></span> Promoters + Passive (7+)</li>
+									<li data-filter="all"><span></span> Detractors (0 to 6)</li>
+								</ul>
 							</div>
 						</div>
 					</div>
-					<div class="reviews">
-						<div class="box">
-							<span>935</span>
-							Reviews Written
-						</div>
-						<div class="box">
-							<span>1,235</span>
-							Reviews Requests
-						</div>
-					</div>
-					<div class="referrals"></div>
-					<div class="nps"></div>
 				</div>
 				<div class="section-title">The 360 Recruiters Team</div>
 				<div class="inner-table-wrap">
 					<table>
 						<thead>
 							<tr>
-								<th class="asc">Rank <span></span></th>
-								<th class="desc left">Recruiter <span></span></th>
-								<th>Review Requests <span></span></th>
-								<th>Reviews Written <span></span></th>
-								<th>Referrals <span></span></th>
-								<th>NPS <span></span></th>
-								<th>Score <span></span></th>
+								<th class="asc left">
+									<div>Recruiter <span></span></div>
+								</th>
+								<th class="desc left">
+									<div>Reviewer <span></span></div>
+								</th>
+								<th class="left">
+									<div>Date <span></span></div>
+								</th>
+								<th class="left">
+									<div>Type <span></span></div>
+								</th>
+								<th class="left">
+									<div>Location <span></span></div>
+								</th>
+								<th>
+									<div>Feedback <span></span></div>
+								</th>
+								<th>
+									<div>Social <br>Share <span></span></div>
+								</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>1</td>
 								<td class="left"><img src="assets/svg/photo-sample.svg" alt="person" class="avatar"> Dina Stephenson</td>
-								<td>104</td>
-								<td>13</td>
-								<td>33</td>
-								<td>21</td>
-								<td><div class="rating" data-rating="5"></div></td>
+								<td class="left"><strong>Ashraf Buckner</strong> <br>Childcare worker</td>
+								<td class="left">2021-04-12</td>
+								<td class="left">Candidate</td>
+								<td class="left">Chicago</td>
+								<td><span class="blue-checkmark"></span></td>
+								<td><span class="social-share-icon"></span></td>
 							</tr>
 							<tr>
-								<td>2</td>
 								<td class="left"><img src="assets/svg/photo-sample.svg" alt="person" class="avatar"> Emil Dalby</td>
-								<td>57</td>
-								<td>11</td>
-								<td>81</td>
-								<td>38</td>
-								<td><div class="rating" data-rating="5"></div></td>
+								<td class="left"><strong>Ashraf Buckner</strong> <br>Childcare worker</td>
+								<td class="left">2021-04-12</td>
+								<td class="left">Candidate</td>
+								<td class="left">Chicago</td>
+								<td><span class="blue-checkmark"></span></td>
+								<td><span class="social-share-icon"></span></td>
 							</tr>
 							<tr>
-								<td>3</td>
 								<td class="left"><img src="assets/svg/photo-sample.svg" alt="person" class="avatar"> Geraint Perry</td>
-								<td>69</td>
-								<td>49</td>
-								<td>29</td>
-								<td>73</td>
-								<td><div class="rating" data-rating="4.8"></div></td>
+								<td class="left"><strong>Ashraf Buckner</strong> <br>Childcare worker</td>
+								<td class="left">2021-04-12</td>
+								<td class="left">Candidate</td>
+								<td class="left">Chicago</td>
+								<td><span class="blue-checkmark"></span></td>
+								<td><span class="social-share-icon"></span></td>
 							</tr>
 							<tr>
-								<td>4</td>
 								<td class="left"><img src="assets/svg/photo-sample.svg" alt="person" class="avatar"> Sumaiya Pena</td>
-								<td>50</td>
-								<td>28</td>
-								<td>18</td>
-								<td>38</td>
-								<td><div class="rating" data-rating="4.5"></div></td>
+								<td class="left"><strong>Ashraf Buckner</strong> <br>Childcare worker</td>
+								<td class="left">2021-04-12</td>
+								<td class="left">Candidate</td>
+								<td class="left">Chicago</td>
+								<td></td>
+								<td><span class="social-share-icon"></span></td>
 							</tr>
 							<tr>
-								<td>5</td>
 								<td class="left"><img src="assets/svg/photo-sample.svg" alt="person" class="avatar"> Alisa Buckner</td>
-								<td>187</td>
-								<td>43</td>
-								<td>27</td>
-								<td>301</td>
-								<td><div class="rating" data-rating="4.2"></div></td>
+								<td class="left"><strong>Ashraf Buckner</strong> <br>Childcare worker</td>
+								<td class="left">2021-04-12</td>
+								<td class="left">Candidate</td>
+								<td class="left">Chicago</td>
+								<td><span class="blue-checkmark"></span></td>
+								<td></td>
 							</tr>
 							<tr>
-								<td>6</td>
 								<td class="left"><img src="assets/svg/photo-sample.svg" alt="person" class="avatar"> Adyan Hall</td>
-								<td>252</td>
-								<td>99</td>
-								<td>52</td>
-								<td>85</td>
-								<td><div class="rating" data-rating="4.1"></div></td>
+								<td class="left"><strong>Ashraf Buckner</strong> <br>Childcare worker</td>
+								<td class="left">2021-04-12</td>
+								<td class="left">Candidate</td>
+								<td class="left">Chicago</td>
+								<td></td>
+								<td><span class="social-share-icon"></span></td>
 							</tr>
 							<tr>
-								<td>7</td>
 								<td class="left"><img src="assets/svg/photo-sample.svg" alt="person" class="avatar"> Maya Adkins</td>
-								<td>87</td>
-								<td>12</td>
-								<td>32</td>
-								<td>241</td>
-								<td><div class="rating" data-rating="3.9"></div></td>
+								<td class="left"><strong>Ashraf Buckner</strong> <br>Childcare worker</td>
+								<td class="left">2021-04-12</td>
+								<td class="left">Candidate</td>
+								<td class="left">Chicago</td>
+								<td></td>
+								<td></td>
 							</tr>
 							<tr>
-								<td>8</td>
 								<td class="left"><img src="assets/svg/photo-sample.svg" alt="person" class="avatar"> Hari Thatcher</td>
-								<td>12</td>
-								<td>132</td>
-								<td>48</td>
-								<td>125</td>
-								<td><div class="rating" data-rating="3.3"></div></td>
+								<td class="left"><strong>Ashraf Buckner</strong> <br>Childcare worker</td>
+								<td class="left">2021-04-12</td>
+								<td class="left">Candidate</td>
+								<td class="left">Chicago</td>
+								<td><span class="blue-checkmark"></span></td>
+								<td><span class="social-share-icon"></span></td>
 							</tr>
 							<tr>
-								<td>9</td>
 								<td class="left"><img src="assets/svg/photo-sample.svg" alt="person" class="avatar"> Shaan Lozano</td>
-								<td>98</td>
-								<td>74</td>
-								<td>4</td>
-								<td>92</td>
-								<td><div class="rating" data-rating="2.8"></div></td>
+								<td class="left"><strong>Ashraf Buckner</strong> <br>Childcare worker</td>
+								<td class="left">2021-04-12</td>
+								<td class="left">Candidate</td>
+								<td class="left">Chicago</td>
+								<td><span class="blue-checkmark"></span></td>
+								<td><span class="social-share-icon"></span></td>
 							</tr>
 							<tr>
-								<td>10</td>
 								<td class="left"><img src="assets/svg/photo-sample.svg" alt="person" class="avatar"> Sofija Kavanagh</td>
-								<td>76</td>
-								<td>90</td>
-								<td>21</td>
-								<td>78</td>
-								<td><div class="rating" data-rating="1.5"></div></td>
+								<td class="left"><strong>Ashraf Buckner</strong> <br>Childcare worker</td>
+								<td class="left">2021-04-12</td>
+								<td class="left">Candidate</td>
+								<td class="left">Chicago</td>
+								<td><span class="blue-checkmark"></span></td>
+								<td><span class="social-share-icon"></span></td>
 							</tr>
 						</tbody>
 					</table>
+				</div>
+				<div class="pagination">
+					<div>
+						Page 1 of 8
+					</div>
+					<div>
+						<a href="#" class="prev">Prev</a>
+						<a href="#" class="active">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						...
+						<a href="#">8</a>
+						<a href="#" class="next">Next</a>
+					</div>
 				</div>
 			</div>
 		</div>
