@@ -537,6 +537,9 @@ img {
 	cursor: pointer;
 	display: inline-block;
 }
+.list-upload-template .inner-table-wrap td {
+	font-size: 16px;
+}
 .inner-table-wrap.onload th {
 	color: #C8D3E2;
 }
