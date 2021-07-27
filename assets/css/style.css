@@ -585,6 +585,19 @@ img {
 	filter: grayscale(1);
 	opacity: .25;
 }
+.inner-table-wrap.selected .select-list {
+	filter: grayscale(1);
+	opacity: .25;
+}
+.valid-checkmark {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	background-image: url("data:image/svg+xml,%3Csvg width='29' height='29' viewBox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.3833 2.70889C7.94328 2.70889 2.71661 7.93556 2.71661 14.3756C2.71661 20.8156 7.94328 26.0422 14.3833 26.0422C20.8233 26.0422 26.0499 20.8156 26.0499 14.3756C26.0499 7.93556 20.8233 2.70889 14.3833 2.70889ZM12.0499 20.2089L6.21661 14.3756L7.86161 12.7306L12.0499 16.9072L20.9049 8.05223L22.5499 9.70889L12.0499 20.2089Z' fill='%232684FE'/%3E%3C/svg%3E%0A");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
 
 
 
