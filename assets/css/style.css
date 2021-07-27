@@ -600,6 +600,75 @@ img {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
+	vertical-align: middle;
+}
+.warning-box {
+	background: #FFF8E3;
+	border: 1px solid #F8CF40;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	padding: 15px 20px;
+}
+.warning-box:before {
+	display: inline-block;
+	content: '';
+	background-image: url("data:image/svg+xml,%3Csvg width='37' height='37' viewBox='0 0 37 37' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.0399 31.6416C15.0399 33.2916 16.3749 34.6266 18.0249 34.6266C19.6749 34.6266 21.0099 33.2916 21.0099 31.6416H15.0399ZM18.0249 9.12665C22.1649 9.12665 25.5249 12.4866 25.5249 16.6266V27.1266H10.5249V16.6266C10.5249 12.4866 13.8849 9.12665 18.0249 9.12665ZM18.0249 2.37665C16.7799 2.37665 15.7749 3.38165 15.7749 4.62665V6.38165C11.0649 7.40165 7.5249 11.6016 7.5249 16.6266V25.6266L4.5249 28.6266V30.1266H31.5249V28.6266L28.5249 25.6266V16.6266C28.5249 11.6016 24.9849 7.40165 20.2749 6.38165V4.62665C20.2749 3.38165 19.2699 2.37665 18.0249 2.37665ZM16.5249 12.1266H19.5249V18.1266H16.5249V12.1266ZM16.5249 21.1266H19.5249V24.1266H16.5249V21.1266Z' fill='%23FFBF01'/%3E%3C/svg%3E%0A");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 36px;
+	height: 36px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.error-sign {
+	background-image: url("data:image/svg+xml,%3Csvg width='29' height='29' viewBox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.2263 2.45996C7.78632 2.45996 2.55965 7.68663 2.55965 14.1266C2.55965 20.5666 7.78632 25.7933 14.2263 25.7933C20.6663 25.7933 25.893 20.5666 25.893 14.1266C25.893 7.68663 20.6663 2.45996 14.2263 2.45996ZM15.393 19.96H13.0597V17.6266H15.393V19.96ZM15.393 15.2933H13.0597V8.29329H15.393V15.2933Z' fill='%23F52B74'/%3E%3C/svg%3E%0A");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	vertical-align: middle;
+	width: 28px;
+	height: 28px;
+	display: inline-block;
+}
+.warning-sign {
+	background-image: url("data:image/svg+xml,%3Csvg width='29' height='29' viewBox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.54999 25.2666H27.2167L14.3833 3.09994L1.54999 25.2666ZM15.55 21.7666H13.2167V19.4333H15.55V21.7666ZM15.55 17.0999H13.2167V12.4333H15.55V17.0999Z' fill='%23FFBF01'/%3E%3C/svg%3E%0A");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	vertical-align: middle;
+	width: 28px;
+	height: 28px;
+	display: inline-block;
+}
+.error-sign span,
+.warning-sign span {
+	position: absolute;
+	background: #FFF8E3;
+	border: 1px solid #F8CF40;
+	border-radius: 10px;
+	transform: translate(-50%, 0);
+	margin-top: 35px;
+	padding: 5px 10px;
+	font-size: 14px;
+	display: none;
+}
+.error-sign span:before,
+.warning-sign span:before {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 5px 7px 5px;
+	border-color: transparent transparent #ffe99e transparent;
+	display: block;
+	content: '';
+	position: absolute;
+	top: -6px;
+	left: calc(50% - 5px);
+}
+.error-sign:hover span,
+.warning-sign:hover span {
+	display: inline-block;
 }
 
 
