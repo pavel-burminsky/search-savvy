@@ -670,6 +670,17 @@ img {
 .warning-sign:hover span {
 	display: inline-block;
 }
+.inner-table-wrap.uploaded .select-list {
+	filter: grayscale(1);
+	opacity: .25;
+}
+.info-box {
+	background: #F7F8FF;
+	border: 1px solid #2684FE;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	padding: 15px 20px;
+}
 
 
 
