@@ -23,6 +23,10 @@
 				$('.dropdown-body').hide();
 			}
 		});
+		// btn toggle
+		$('.btn-toggle').click(function(){
+			$(this).toggleClass('on');
+		});
 		// process rating
 		function process_rating(){
 			$('.rating').each(function(){
