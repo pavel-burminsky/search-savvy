@@ -1,1 +1,161 @@
-settings-emails.html
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Settings - Emails | Search Savvy</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="sidebar">
+			<a href="#">
+				<img src="assets/svg/logo.svg" alt="Search Savvy" class="sidebar-logo">
+			</a>
+			<div class="sidebar-nav-item">
+				<a href="#">
+					<img src="assets/svg/icon-dashboard.svg" alt="Dashboard"> Dashboard
+				</a>
+			</div>
+			<div class="sidebar-nav-item">
+				<a href="#">
+					<img src="assets/svg/icon-reviews.svg" alt="Reviews"> Reviews
+				</a>
+			</div>
+			<div class="sidebar-nav-item">
+				<a href="#">
+					<img src="assets/svg/icon-referrals.svg" alt="Referrals"> Referrals
+				</a>
+			</div>
+			<div class="sidebar-nav-item">
+				<a href="#">
+					<img src="assets/svg/icon-list-upload.svg" alt="List Upload"> List Upload
+				</a>
+			</div>
+			<div class="sidebar-nav-item">
+				<a href="#">
+					<img src="assets/svg/icon-email-log.svg" alt="Email Log"> Email Log
+				</a>
+			</div>
+			<div class="sidebar-nav-item active">
+				<a href="#">
+					<img src="assets/svg/icon-settings.svg" alt="Settings"> Settings
+				</a>
+				<div class="sub-nav">
+					<a href="#">Company</a>
+					<a href="#">Team</a>
+					<a href="#">Questions</a>
+					<a href="#">Location</a>
+					<a href="#" class="active">Email</a>
+				</div>
+			</div>
+			<div class="sidebar-nav-item">
+				<a href="#">
+					<img src="assets/svg/icon-help.svg" alt="Help"> Help
+				</a>
+			</div>
+		</div>
+		<div class="contents">
+			<div class="top-bar">
+				<div class="top-meta">
+					<img src="assets/svg/photo-sample.svg" alt="profile picture"> Kristen <span></span>
+				</div>
+				<div class="top-nav">
+					<img src="assets/svg/icon-settings-blue.svg" alt="Team Settings"> Email Settings
+				</div>
+			</div>
+			<div class="inner-wrap">
+				<div class="space-35"></div>
+				<div class="border-wrap">
+					<table class="fields-table">
+						<tr>
+							<td>From email address</td>
+							<td class="field"><input type="email" name="" value="reviews@360recruiters.com"></td>
+						</tr>
+						<tr>
+							<td>From name</td>
+							<td class="field"><input type="text" name="" value="360 Recruiters"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td class="field">
+								<label class="checkbox-container">Enable email sending
+									<input type="checkbox" checked>
+									<span class="checkmark"></span>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td class="field">Minimum number of days before a new review request email can be sent to a candidate that was previously contacted <input type="text" name="" value="365" class="inline-field"> days.</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td class="field">
+								<label class="checkbox-container">Send emails on weekdays only
+									<input type="checkbox" checked>
+									<span class="checkmark"></span>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>Subject</td>
+							<td class="field"><input type="text" name="" value=""></td>
+						</tr>
+						<tr>
+							<td>Body</td>
+							<td class="field">
+								<textarea>
+Hi {First Name},
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit nulla id ultrices egestas id neque morbi. Sed lacus mattis leo consectetur sed laoreet.
+
+Regards,
+{RecruiterFirstName}
+								</textarea>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td class="field">
+								<label class="checkbox-container">Enable follow up emails
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td class="field">Minimum score required to send a Positive Response follow up email <input type="text" name="" value="4.5" class="inline-field"></td>
+						</tr>
+						<tr>
+							<td>Subject</td>
+							<td class="field"><input type="text" name="" value=""></td>
+						</tr>
+						<tr>
+							<td>Positive Response</td>
+							<td class="field">
+								<textarea>
+Hi {First Name},
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit nulla id ultrices egestas id neque morbi. Sed lacus mattis leo consectetur sed laoreet.
+
+Regards,
+{RecruiterFirstName}
+								</textarea>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td class="field"><span class="blue-btn">Save email settings</span></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="assets/js/scripts.js"></script>
+</body>
+</html>
