@@ -831,6 +831,7 @@ img {
 	font-size: 18px;
 	color: #2684FE;
 	text-decoration: none;
+	cursor: pointer;
 }
 .fields-table input {
 	border: 1px solid #C8D3E2;
@@ -1146,6 +1147,23 @@ img {
 }
 .inner-table-wrap.no-first-border tbody > :first-child td {
 	border-top: 0;
+}
+.add-new-question {
+	padding: 10px 25px;
+	display: none;
+}
+.add-new-question input {
+	border: 1px solid #C8D3E2;
+	border-radius: 10px;
+	padding: 15px;
+	font-size: 18px;
+	color: #151D30;
+	outline: none;
+	width: calc(100% - 350px);
+	margin-right: 30px;
+}
+.add-new-question .blue-btn {
+	margin-right: 20px;
 }
 
 

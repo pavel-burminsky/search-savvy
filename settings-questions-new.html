@@ -1,1 +1,174 @@
-settings-questions-new.html
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Settings - Questions - Add New | Search Savvy</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="sidebar">
+			<a href="#">
+				<img src="assets/svg/logo.svg" alt="Search Savvy" class="sidebar-logo">
+			</a>
+			<div class="sidebar-nav-item">
+				<a href="#">
+					<img src="assets/svg/icon-dashboard.svg" alt="Dashboard"> Dashboard
+				</a>
+			</div>
+			<div class="sidebar-nav-item">
+				<a href="#">
+					<img src="assets/svg/icon-reviews.svg" alt="Reviews"> Reviews
+				</a>
+			</div>
+			<div class="sidebar-nav-item">
+				<a href="#">
+					<img src="assets/svg/icon-referrals.svg" alt="Referrals"> Referrals
+				</a>
+			</div>
+			<div class="sidebar-nav-item">
+				<a href="#">
+					<img src="assets/svg/icon-list-upload.svg" alt="List Upload"> List Upload
+				</a>
+			</div>
+			<div class="sidebar-nav-item">
+				<a href="#">
+					<img src="assets/svg/icon-email-log.svg" alt="Email Log"> Email Log
+				</a>
+			</div>
+			<div class="sidebar-nav-item active">
+				<a href="#">
+					<img src="assets/svg/icon-settings.svg" alt="Settings"> Settings
+				</a>
+				<div class="sub-nav">
+					<a href="#">Company</a>
+					<a href="#">Team</a>
+					<a href="#" class="active">Questions</a>
+					<a href="#">Location</a>
+					<a href="#">Email</a>
+					<a href="#">Integrations</a>
+				</div>
+			</div>
+			<div class="sidebar-nav-item">
+				<a href="#">
+					<img src="assets/svg/icon-help.svg" alt="Help"> Help
+				</a>
+			</div>
+		</div>
+		<div class="contents">
+			<div class="top-bar">
+				<div class="top-meta">
+					<img src="assets/svg/photo-sample.svg" alt="profile picture"> Kristen <span></span>
+				</div>
+				<div class="top-nav">
+					<img src="assets/svg/icon-settings-blue.svg" alt="Team Settings"> Question Settings
+				</div>
+			</div>
+			<div class="inner-wrap">
+				<div class="space-35"></div>
+				<div class="questions-type">
+					Type 
+					<select>
+						<option>Client</option>
+						<option>Recruiter</option>
+					</select>
+				</div>
+				<div class="heading-button">
+					The Big 5 (4/5 questions entered)
+				</div>
+				<div class="inner-table-wrap drag-drop the-big-5">
+					<div class="questions-heading" style="display: none;">
+						<span class="blue-btn plus">Add new Big 5 quesion</span>
+					</div>
+					<div class="add-new-question" style="display: block;">
+						<input type="text" name=""> <span class="blue-btn">Save question</span> <span class="cancel">Cancel</span>
+					</div>
+					<table>
+						<tbody>
+							<tr>
+								<td class="questions-limit"><span class="drag"></span></td>
+								<td class="questions-limit"><span class="btn-toggle on"></span></td>
+								<td class="left">Did your recruiter respond to your messages promptly?</td>
+								<td class="questions-limit"><a href="#" class="icon-edit">edit</a></td>
+							</tr>
+							<tr>
+								<td class="questions-limit"><span class="drag"></span></td>
+								<td class="questions-limit"><span class="btn-toggle on"></span></td>
+								<td class="left">Was your recruiter courteous and respectful?</td>
+								<td class="questions-limit"><a href="#" class="icon-edit">edit</a></td>
+							</tr>
+							<tr>
+								<td class="questions-limit"><span class="drag"></span></td>
+								<td class="questions-limit"><span class="btn-toggle on"></span></td>
+								<td class="left">Was your recruiter honest and trustworthy?</td>
+								<td class="questions-limit"><a href="#" class="icon-edit">edit</a></td>
+							</tr>
+							<tr>
+								<td class="questions-limit"><span class="drag"></span></td>
+								<td class="questions-limit"><span class="btn-toggle on"></span></td>
+								<td class="left">Was your recruiter a good listener?</td>
+								<td class="questions-limit"><a href="#" class="icon-edit">edit</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="space-35"></div>
+				<div class="heading-button">
+					Inactive Big 5 Questions
+				</div>
+				<div class="inner-table-wrap drag-drop no-first-border">
+					<table>
+						<tbody>
+							<tr>
+								<td class="questions-limit"><span class="drag"></span></td>
+								<td class="questions-limit"><span class="btn-toggle"></span></td>
+								<td class="left">Did your recruiter respond to your messages promptly?</td>
+								<td class="questions-limit"><a href="#" class="icon-edit">edit</a></td>
+							</tr>
+							<tr>
+								<td class="questions-limit"><span class="drag"></span></td>
+								<td class="questions-limit"><span class="btn-toggle"></span></td>
+								<td class="left">Was your recruiter courteous and respectful?</td>
+								<td class="questions-limit"><a href="#" class="icon-edit">edit</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="space-35"></div>
+				<span class="blue-btn">Hide inactive Big 5 question</span>
+				<div class="space-35"></div>
+				<div class="heading-button">
+					Supplementary Questions (2/10 questions entered)
+				</div>
+				<div class="inner-table-wrap drag-drop">
+					<div class="questions-heading">
+						<span class="blue-btn plus">Add new supplementary question</span>
+					</div>
+					<table>
+						<tbody>
+							<tr>
+								<td class="questions-limit"><span class="drag"></span></td>
+								<td class="questions-limit"><span class="btn-toggle on"></span></td>
+								<td class="left">Did your recruiter respond to your messages promptly?</td>
+								<td class="questions-limit"><a href="#" class="icon-edit">edit</a></td>
+							</tr>
+							<tr>
+								<td class="questions-limit"><span class="drag"></span></td>
+								<td class="questions-limit"><span class="btn-toggle on"></span></td>
+								<td class="left">Was your recruiter courteous and respectful?</td>
+								<td class="questions-limit"><a href="#" class="icon-edit">edit</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="space-35"></div>
+				<span class="blue-btn">Show inactive supplementary question</span>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="assets/js/scripts.js"></script>
+</body>
+</html>

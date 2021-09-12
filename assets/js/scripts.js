@@ -63,5 +63,14 @@
 			});
 		}
 		process_rating();
+		// add the big 5 question
+		$('.questions-heading .blue-btn').click(function(){
+			$(this).closest('.questions-heading').hide();
+			$('.add-new-question').show();
+		});
+		$('.add-new-question .blue-btn, .add-new-question .cancel').click(function(){
+			$('.questions-heading').show();
+			$('.add-new-question').hide();
+		});
 	});
 })(jQuery);
