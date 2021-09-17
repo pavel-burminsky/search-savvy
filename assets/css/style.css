@@ -1534,6 +1534,9 @@ img {
 	float: right;
 	margin-top: 5px;
 }
+.locations-top.single a {
+	float: none;
+}
 .locations-top a:hover {
 	text-decoration: none;
 }
