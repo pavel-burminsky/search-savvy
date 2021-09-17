@@ -1168,6 +1168,7 @@ img {
 }
 .front {
 	line-height: 1.8;
+	padding-bottom: 150px;
 }
 .container {
 	max-width: 1200px;
@@ -1209,8 +1210,11 @@ img {
 .main-sidebar {
 	flex: 0 0 23%;
 	max-width: 23%;
+}
+.main-sidebar .inner {
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 	border-radius: 10px;
+	overflow: hidden;
 }
 .company-summary {
 	padding: 30px 30px 30px 360px;
@@ -1371,6 +1375,184 @@ img {
 }
 .company-links .phone {
 	background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.68941 5.9906C6.74941 6.8806 6.89941 7.7506 7.13941 8.5806L5.93941 9.7806C5.52941 8.5806 5.26941 7.3106 5.17941 5.9906H6.68941ZM16.5494 18.0106C17.3994 18.2506 18.2694 18.4006 19.1494 18.4606V19.9506C17.8294 19.8606 16.5594 19.6006 15.3494 19.2006L16.5494 18.0106ZM7.64941 3.9906H4.14941C3.59941 3.9906 3.14941 4.4406 3.14941 4.9906C3.14941 14.3806 10.7594 21.9906 20.1494 21.9906C20.6994 21.9906 21.1494 21.5406 21.1494 20.9906V17.5006C21.1494 16.9506 20.6994 16.5006 20.1494 16.5006C18.9094 16.5006 17.6994 16.3006 16.5794 15.9306C16.4794 15.8906 16.3694 15.8806 16.2694 15.8806C16.0094 15.8806 15.7594 15.9806 15.5594 16.1706L13.3594 18.3706C10.5294 16.9206 8.20941 14.6106 6.76941 11.7806L8.96941 9.5806C9.24941 9.3006 9.32941 8.9106 9.21941 8.5606C8.84941 7.4406 8.64941 6.2406 8.64941 4.9906C8.64941 4.4406 8.19941 3.9906 7.64941 3.9906Z' fill='%232684FE'/%3E%3C/svg%3E%0A");
+}
+.company-reviews {
+	margin-top: 30px;
+	padding: 30px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+}
+.company-reviews .top {
+	font-weight: 600;
+	font-size: 30px;
+	color: #2684FE;
+	padding-bottom: 20px;
+	border-bottom: 1px dashed #C8D3E2;
+	margin-bottom: 20px;
+}
+.company-reviews .top:after {
+	clear: both;
+	display: block;
+	content: '';
+}
+.company-reviews .sort {
+	text-align: right;
+	width: 250px;
+	font-size: 18px;
+	font-weight: 400;
+	color: #151D30;
+	display: inline-block;
+	float: right;
+	margin-top: 5px;
+}
+.company-reviews .sort span {
+	color: #2684FE;
+	display: inline-block;
+	background: #EEF3FB;
+	border-radius: 10px;
+	padding: 2px 10px;
+	cursor: pointer;
+	transition: background .25s ease-out, color .25s ease-out;
+	margin-left: 10px;
+}
+.company-reviews .sort span:hover {
+	background: #2684FE;
+	color: #fff;
+}
+.company-review {
+	padding-bottom: 30px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid #C8D3E2;
+}
+.company-review .meta {
+	font-size: 21px;
+	margin-bottom: 15px;
+}
+.company-review .meta:after {
+	clear: both;
+	display: block;
+	content: '';
+}
+.company-review .meta > span {
+	font-weight: 600;
+}
+.company-review .rating-right {
+	float: right;
+}
+.company-review .time {
+	opacity: .4;
+	display: block;
+	margin-bottom: 15px;
+}
+.company-review .rating-placeholder span,
+.company-review .rating-stars > span {
+	width: 25px;
+	height: 25px;
+}
+.company-review .rating-stars > span > span {
+	background-size: 25px 25px;
+}
+.company-review .rating-inner {
+	vertical-align: text-top;
+}
+.pagination-front {}
+.pagination-front:after {
+	display: block;
+	content: '';
+	clear: both;
+}
+.pagination-front .nav {
+	color: #2684FE;
+	display: inline-block;
+	float: right;
+}
+.pagination-front .nav a {
+	text-decoration: none;
+	color: #2684FE;
+}
+.pagination-front .prev {
+	margin-right: 20px;
+}
+.pagination-front .next {
+	margin-left: 20px;
+}
+.pagination-front .prev:before,
+.pagination-front .next:after {
+	display: inline-block;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	content: '';
+}
+.pagination-front .prev:before {
+	background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.7275 20.1145L14.1375 18.7045L8.55754 13.1145L20.7275 13.1145L20.7275 11.1145L8.55754 11.1145L14.1375 5.5245L12.7275 4.1145L4.72754 12.1145L12.7275 20.1145Z' fill='%232684FE'/%3E%3C/svg%3E%0A");
+	margin-right: 5px;
+}
+.pagination-front .next:after {
+	background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.5 4.1145L11.09 5.5245L16.67 11.1145H4.5V13.1145H16.67L11.09 18.7045L12.5 20.1145L20.5 12.1145L12.5 4.1145Z' fill='%232684FE'/%3E%3C/svg%3E%0A");
+	margin-left: 5px;
+}
+.pagination-front a:not(.prev, .next),
+.pagination-front .current {
+	width: 42px;
+	height: 42px;
+	margin: 0 5px;
+	border-radius: 100px;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 42px;
+	text-align: center;
+}
+.pagination-front a:not(.prev, .next):hover {
+	background: #EEF3FB;
+}
+.pagination-front .current {
+	background: #2684FE;
+	color: #fff;
+}
+.locations-top {
+	font-weight: 600;
+	font-size: 23px;
+	padding: 20px 0;
+	margin: 0 20px;
+	border-bottom: 1px dashed #C8D3E2;
+}
+.locations-top:after {
+	display: block;
+	content: '';
+	clear: both;
+}
+.locations-top a {
+	text-decoration: underline;
+	color: #2684FE;
+	font-size: 16px;
+	font-weight: normal;
+	display: inline-block;
+	float: right;
+	margin-top: 5px;
+}
+.locations-top a:hover {
+	text-decoration: none;
+}
+.location-item {
+	margin-top: 25px;
+}
+.location-item h3 {
+	margin: 0 20px 10px;
+	font-weight: 600;
+	font-size: 20px;
+	color: #2684FE;
+}
+.location-item p {
+	margin: 0 20px 10px;
+}
+.location-item .map {
+	width: 100%;
+	height: auto;
+	line-height: 0;
 }
 
 
