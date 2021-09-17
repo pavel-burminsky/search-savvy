@@ -1246,6 +1246,7 @@ img {
 	font-weight: 600;
 	font-size: 40px;
 	margin-right: 10px;
+	line-height: 1.15;
 }
 .company-summary .rating-placeholder span,
 .company-summary .rating-stars > span {
@@ -1556,6 +1557,68 @@ img {
 	width: 100%;
 	height: auto;
 	line-height: 0;
+}
+.profile-summary {
+	padding: 30px 200px 30px 210px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	position: relative;
+	min-height: 210px;
+}
+.profile-summary .profile-photo {
+	position: absolute;
+	left: 30px;
+	top: 30px;
+	height: 150px;
+	width: 150px;
+	border-radius: 200px;
+}
+.profile-summary h2 {
+	font-weight: 600;
+	font-size: 34px;
+	margin: 0;
+	line-height: 1.15;
+}
+.profile-summary .rating {
+	display: inline-block;
+	font-weight: 600;
+	font-size: 40px;
+	margin-right: 10px;
+	line-height: 1.15;
+}
+.profile-summary .rating-placeholder span,
+.profile-summary .rating-stars > span {
+	width: 25px;
+	height: 25px;
+}
+.profile-summary .rating-stars > span > span {
+	background-size: 25px 25px;
+}
+.profile-summary p {
+	color: #2684FE;
+	margin: 10px 0 0;
+}
+.profile-summary .contact,
+.profile-summary .review {
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	font-weight: 500;
+	padding: 14px 24px;
+	background: #2684FE;
+	border-radius: 10px;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	min-width: 160px;
+	text-align: center;
+}
+.profile-summary .review {
+	top: 110px;
+}
+.profile-summary .position a {
+	text-decoration: none;
+	color: #2684FE;
 }
 
 
