@@ -72,5 +72,25 @@
 			$('.questions-heading').show();
 			$('.add-new-question').hide();
 		});
+		// rate field
+		$('.rate-field').each(function(){
+			var name = $(this).data('name'),
+				count = $(this).data('type') == 'short' ? 3 : 5,
+				html = '<div class="buttons">';
+			for(var i = 1; i <= count; i++){
+				html += '<span data-value="'+i+'" class="btn"><span></span></span>';
+			}
+			html += '</div>';
+			$(this).append(html);
+		});
+		// review navigation
+		$('.review-next').click(function(){
+			$('.review-wrap .step').removeClass('active');
+			$('.review-wrap .step[data-step="2"]').addClass('active');
+		});
+		$('.review-back').click(function(){
+			$('.review-wrap .step').removeClass('active');
+			$('.review-wrap .step[data-step="1"]').addClass('active');
+		});
 	});
 })(jQuery);
