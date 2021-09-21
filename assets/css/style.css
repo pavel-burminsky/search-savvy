@@ -8,7 +8,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Poppins', sans-serif;
-	font-size: 18px;
+	font-size: 14px;
 	font-weight: 400;
 	color: #151D30;
 }
@@ -301,17 +301,17 @@ img {
 	flex-wrap: nowrap;
 }
 .dashboard-stats .score {
-	max-width: 560px;
-	flex: 0 0 560px;
+	max-width: 360px;
+	flex: 0 0 360px;
 	padding-right: 15px;
 }
 .dashboard-stats .reviews {
-	max-width: calc(50% - 530px);
-	flex: 0 0 calc(50% - 530px);
+	max-width: calc(50% - 360px);
+	flex: 0 0 calc(50% - 360px);
 }
 .dashboard-stats .referrals {
-	max-width: calc(50% - 530px);
-	flex: 0 0 calc(50% - 530px);
+	max-width: calc(50% - 360px);
+	flex: 0 0 calc(50% - 360px);
 	padding-left: 15px;
 }
 .dashboard-stats .referrals .inner {
@@ -337,8 +337,8 @@ img {
 	font-size: 30px;
 }
 .dashboard-stats .nps {
-	max-width: 500px;
-	flex: 0 0 500px;
+	max-width: 360px;
+	flex: 0 0 360px;
 	padding-left: 15px;
 }
 .dashboard-stats .nps .inner {
@@ -394,13 +394,14 @@ img {
 .nps-stats {
 	flex: 0 0 calc(100% - 190px);
 	max-width: calc(100% - 190px);
-	padding-left: 40px;
+	padding-left: 10px;
+	font-size: 12px;
 }
 .nps-stats div {
 	background-repeat: no-repeat;
-	background-size: 36px;
+	background-size: 24px;
 	background-position: left top;
-	padding-left: 50px;
+	padding-left: 30px;
 	margin-bottom: 10px;
 }
 .nps-stats > :nth-child(1) {
@@ -415,7 +416,7 @@ img {
 .nps-stats span {
 	display: block;
 	font-weight: 600;
-	font-size: 30px;
+	font-size: 20px;
 	line-height: 1;
 }
 .dashboard-stats .box {
@@ -431,16 +432,16 @@ img {
 .dashboard-stats .score .box > :first-child {
 	padding-top: 30px;
 	text-align: center;
-	max-width: 170px;
-	flex: 0 0 170px;
+	max-width: 115px;
+	flex: 0 0 115px;
 }
 .dashboard-stats .score .box > :last-child {
-	max-width: calc(100% - 170px);
-	flex: 0 0 calc(100% - 170px);
+	max-width: calc(100% - 115px);
+	flex: 0 0 calc(100% - 115px);
 	padding-left: 30px;
 }
 .dashboard-stats .score .rating {
-	font-size: 40px;
+	font-size: 20px;
 	font-weight: 600;
 }
 .dashboard-stats .score .rating-inner {
@@ -452,11 +453,11 @@ img {
 }
 .dashboard-stats .score .rating-placeholder span,
 .dashboard-stats .score .rating-stars > span {
-	width: 24px;
-	height: 24px;
+	width: 16px;
+	height: 16px;
 }
 .dashboard-stats .score .rating-stars > span > span {
-	background-size: 24px 24px;
+	background-size: 16px 16px;
 }
 .dashboard-stats .reviews .box {
 	position: relative;
@@ -514,8 +515,8 @@ img {
 }
 .score-detailed .star {
 	display: inline-block;
-	width: 24px;
-	height: 24px;
+	width: 16px;
+	height: 16px;
 	background-image: url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M14.0222 1.92371L16.7906 7.53323C16.9831 7.92337 17.3553 8.19371 17.7859 8.25618L23.9765 9.15577C25.061 9.31346 25.4936 10.6457 24.7092 11.4101L20.2297 15.7765C19.9184 16.0801 19.7761 16.5179 19.8498 16.9464L20.9071 23.112C21.0924 24.1918 19.9588 25.0151 18.9891 24.5056L13.4523 21.5949C13.0673 21.3927 12.607 21.3927 12.222 21.5949L6.68514 24.5056C5.71541 25.0156 4.58183 24.1918 4.76718 23.112L5.82447 16.9464C5.89819 16.5179 5.75586 16.0801 5.44456 15.7765L0.96504 11.4101C0.180651 10.6452 0.613293 9.31295 1.69772 9.15577L7.88835 8.25618C8.31895 8.19371 8.69118 7.92337 8.88369 7.53323L11.6521 1.92371C12.1364 0.94118 13.5373 0.94118 14.0222 1.92371Z' fill='%23F8CF40'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='24.5455' height='24.5455' fill='white' transform='translate(0.564209 0.650879)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -526,8 +527,8 @@ img {
 .score-detailed .score-bar {
 	background: #EEF3FB;
 	display: inline-block;
-	width: 170px;
-	height: 24px;
+	width: 60px;
+	height: 16px;
 	vertical-align: middle;
 	margin-right: 10px;
 }
@@ -2258,6 +2259,73 @@ img {
 .preview-image-review img {
 	max-width: 100%;
 	max-height: 460px;
+}
+@media(min-width: 1400px){
+	body {
+		font-size: 16px;
+	}
+}
+@media(min-width: 1800px){
+	body {
+		font-size: 18px;
+	}
+	.dashboard-stats .score {
+		max-width: 560px;
+		flex: 0 0 560px;
+	}
+	.dashboard-stats .reviews {
+		max-width: calc(50% - 530px);
+		flex: 0 0 calc(50% - 530px);
+	}
+	.dashboard-stats .referrals {
+		max-width: calc(50% - 530px);
+		flex: 0 0 calc(50% - 530px);
+	}
+	.dashboard-stats .nps {
+		max-width: 500px;
+		flex: 0 0 500px;
+	}
+	.nps-stats {
+		padding-left: 40px;
+		font-size: 18px;
+	}
+	.nps-stats div {
+		background-size: 36px;
+		padding-left: 50px;
+	}
+	.nps-stats span {
+		font-size: 30px;
+	}
+	.dashboard-stats .score .box > :first-child {
+		max-width: 170px;
+		flex: 0 0 170px;
+	}
+	.dashboard-stats .score .box > :last-child {
+		max-width: calc(100% - 170px);
+		flex: 0 0 calc(100% - 170px);
+	}
+	.dashboard-stats .score .rating {
+		font-size: 40px;
+	}
+	.dashboard-stats .score .rating-inner {
+		max-width: 145px;
+	}
+	.dashboard-stats .score .rating-placeholder span,
+	.dashboard-stats .score .rating-stars > span {
+		width: 24px;
+		height: 24px;
+	}
+	.dashboard-stats .score .rating-stars > span > span {
+		background-size: 24px 24px;
+	}
+	.score-detailed .star {
+		width: 24px;
+		height: 24px;
+	}
+	.score-detailed .score-bar {
+		width: 170px;
+		height: 24px;
+	}
 }
 
 
