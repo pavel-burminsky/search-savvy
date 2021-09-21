@@ -9,6 +9,11 @@
 			$('.dropdown-body').hide();
 			$(this).closest('.filter-dropdown').find('.dropdown-body').show();
 		});
+		// detailed score dashboard
+		$('.score-bar > span').each(function(){
+			var w = $(this).data('w');
+			$(this).css('width', w + '%');
+		});
 		// checkboxes click
 		$('.checkboxes li').click(function(){
 			$(this).toggleClass('selected');
@@ -92,5 +97,26 @@
 			$('.review-wrap .step').removeClass('active');
 			$('.review-wrap .step[data-step="1"]').addClass('active');
 		});
+		// dashboard chart
+		if($('.nps-chart').length){
+			var ctx = document.getElementById('nps-pie');
+			var myChart = new Chart(ctx, {
+				type: 'pie',
+				options: {
+					borderWidth: 0
+				},
+				data: {
+					datasets: [{
+						label: 'My First Dataset',
+						data: [20, 40, 300],
+						backgroundColor: [
+							'#F52B74',
+							'#F8CF40',
+							'#2684FE'
+						],
+					}]
+				}
+			});
+		}
 	});
 })(jQuery);

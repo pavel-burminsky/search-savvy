@@ -140,7 +140,7 @@
 					</div>
 				</div>
 				<div class="section-title">The Stats</div>
-				<!-- <div class="dashboard-stats">
+				<div class="dashboard-stats">
 					<div class="score">
 						<div class="box">
 							<div class="col">
@@ -148,6 +148,23 @@
 								Your Score
 							</div>
 							<div class="col">
+								<div class="score-detailed">
+									<div>
+										<span class="num">5</span><span class="star"></span><span class="score-bar"><span data-w="90"></span></span> 15
+									</div>
+									<div>
+										<span class="num">4</span><span class="star"></span><span class="score-bar"><span data-w="45"></span></span> 4
+									</div>
+									<div>
+										<span class="num">3</span><span class="star"></span><span class="score-bar"><span data-w="15"></span></span> 2
+									</div>
+									<div>
+										<span class="num">2</span><span class="star"></span><span class="score-bar"><span data-w="0"></span></span> 0
+									</div>
+									<div>
+										<span class="num">1</span><span class="star"></span><span class="score-bar"><span data-w="0"></span></span> 0
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -161,9 +178,44 @@
 							Reviews Requests
 						</div>
 					</div>
-					<div class="referrals"></div>
-					<div class="nps"></div>
-				</div> -->
+					<div class="referrals">
+						<div class="inner">
+							<div>
+								<span>145</span>
+								Referrals
+							</div>
+						</div>
+					</div>
+					<div class="nps">
+						<div class="inner">
+							<div class="nps-chart">
+								<div class="pie">
+									<canvas id="nps-pie" width="190" height="190"></canvas>
+								</div>
+								<div class="nps-info">
+									<div>
+										<span>8.8</span>
+										NPS Score
+									</div>
+								</div>
+							</div>
+							<div class="nps-stats">
+								<div>
+									<span>91.0%</span>
+									Promoters
+								</div>
+								<div>
+									<span>5.5%</span>
+									Passives
+								</div>
+								<div>
+									<span>3.5%</span>
+									Detractors
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="section-title">The 360 Recruiters Team</div>
 				<div class="inner-table-wrap">
 					<table>
@@ -200,7 +252,7 @@
 								<td>13</td>
 								<td>33</td>
 								<td>21</td>
-								<td><div class="rating" data-rating="5"></div></td>
+								<td><div class="rating" data-rating="5.0"></div></td>
 							</tr>
 							<tr>
 								<td>2</td>
@@ -209,7 +261,7 @@
 								<td>11</td>
 								<td>81</td>
 								<td>38</td>
-								<td><div class="rating" data-rating="5"></div></td>
+								<td><div class="rating" data-rating="5.0"></div></td>
 							</tr>
 							<tr>
 								<td>3</td>
@@ -305,6 +357,7 @@
 		</div>
 	</div>
 	<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="assets/js/chart.min.js"></script>
 	<script type="text/javascript" src="assets/js/scripts.js"></script>
 </body>
 </html>
